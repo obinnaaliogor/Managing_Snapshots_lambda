@@ -1,0 +1,9 @@
+To ensure that your Lambda functions have the necessary permissions to interact with AWS services such as EC2 and SNS, you need to create an IAM role with the appropriate permissions and attach it to your Lambda functions. Below are the IAM policies for the Lambda functions that manage snapshots and EBS volumes.
+IAM Policy for Managing Snapshots
+
+Create an IAM policy with permissions to:
+
+    Describe snapshots
+    Describe images
+    Delete snapshots
+    Publish to an SNS topic
